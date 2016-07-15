@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Good_Morning" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LsM-cM-86z">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NGh-7B-AMo">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="3f2-GF-o9k">
+                                        <rect key="frame" x="0.0" y="20" width="600" height="560"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eT6-1T-W8g">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="280"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote of the Day:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROE-7l-kAe">
+                                                        <rect key="frame" x="20" y="20" width="93" height="14"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEO-vS-xvR">
+                                                        <rect key="frame" x="20" y="42" width="560" height="20"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="ROE-7l-kAe" firstAttribute="top" secondItem="eT6-1T-W8g" secondAttribute="top" constant="20" symbolic="YES" id="2ne-FN-FBY"/>
+                                                    <constraint firstItem="QEO-vS-xvR" firstAttribute="leading" secondItem="eT6-1T-W8g" secondAttribute="leading" constant="20" symbolic="YES" id="7Om-7Q-Jt8"/>
+                                                    <constraint firstItem="ROE-7l-kAe" firstAttribute="leading" secondItem="eT6-1T-W8g" secondAttribute="leading" constant="20" symbolic="YES" id="CeJ-EH-IiT"/>
+                                                    <constraint firstItem="QEO-vS-xvR" firstAttribute="top" secondItem="ROE-7l-kAe" secondAttribute="bottom" constant="8" symbolic="YES" id="I6j-A1-zG0"/>
+                                                    <constraint firstAttribute="trailing" secondItem="QEO-vS-xvR" secondAttribute="trailing" constant="20" symbolic="YES" id="Saw-d9-lbZ"/>
+                                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="QEO-vS-xvR" secondAttribute="bottom" id="ULE-yR-NHh"/>
+                                                    <constraint firstItem="QEO-vS-xvR" firstAttribute="centerX" secondItem="eT6-1T-W8g" secondAttribute="centerX" id="zdE-jd-nuh"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h6f-6Z-SaB">
+                                                <rect key="frame" x="0.0" y="280" width="600" height="280"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verse of the Day:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IqH-uJ-icI">
+                                                        <rect key="frame" x="20" y="20" width="91" height="14"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dSX-xW-NLU">
+                                                        <rect key="frame" x="20" y="42" width="560" height="20"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="dSX-xW-NLU" firstAttribute="top" secondItem="IqH-uJ-icI" secondAttribute="bottom" constant="8" symbolic="YES" id="3cj-8z-4RV"/>
+                                                    <constraint firstItem="IqH-uJ-icI" firstAttribute="leading" secondItem="h6f-6Z-SaB" secondAttribute="leading" constant="20" symbolic="YES" id="DIB-KK-S8Y"/>
+                                                    <constraint firstItem="IqH-uJ-icI" firstAttribute="top" secondItem="h6f-6Z-SaB" secondAttribute="top" constant="20" symbolic="YES" id="Do7-bT-lbc"/>
+                                                    <constraint firstAttribute="trailing" secondItem="dSX-xW-NLU" secondAttribute="trailing" constant="20" symbolic="YES" id="Fez-Z9-bE4"/>
+                                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="dSX-xW-NLU" secondAttribute="bottom" id="GCt-c1-4WJ"/>
+                                                    <constraint firstItem="dSX-xW-NLU" firstAttribute="leading" secondItem="h6f-6Z-SaB" secondAttribute="leading" constant="20" symbolic="YES" id="cfV-Gq-BDg"/>
+                                                    <constraint firstItem="dSX-xW-NLU" firstAttribute="centerX" secondItem="h6f-6Z-SaB" secondAttribute="centerX" id="sUj-A8-PTw"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="3f2-GF-o9k" firstAttribute="centerX" secondItem="NGh-7B-AMo" secondAttribute="centerX" id="8uB-Y7-ApJ"/>
+                                    <constraint firstItem="3f2-GF-o9k" firstAttribute="centerY" secondItem="NGh-7B-AMo" secondAttribute="centerY" id="KCd-6k-Gd5"/>
+                                    <constraint firstItem="3f2-GF-o9k" firstAttribute="top" secondItem="NGh-7B-AMo" secondAttribute="top" constant="20" id="MIO-vK-5yn"/>
+                                    <constraint firstAttribute="bottom" secondItem="3f2-GF-o9k" secondAttribute="bottom" id="ZqO-Uv-y6e"/>
+                                    <constraint firstItem="3f2-GF-o9k" firstAttribute="width" secondItem="NGh-7B-AMo" secondAttribute="width" id="dBL-vI-boY"/>
+                                    <constraint firstAttribute="trailing" secondItem="3f2-GF-o9k" secondAttribute="trailing" id="jaO-kE-kbl"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="NGh-7B-AMo" secondAttribute="trailing" id="aFd-YH-iDl"/>
+                            <constraint firstItem="NGh-7B-AMo" firstAttribute="top" secondItem="LsM-cM-86z" secondAttribute="top" id="cdr-Oh-6Xd"/>
+                            <constraint firstItem="NGh-7B-AMo" firstAttribute="leading" secondItem="LsM-cM-86z" secondAttribute="leading" id="ejc-Bv-MOM"/>
+                            <constraint firstItem="NGh-7B-AMo" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="tHv-Mq-uNq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="qodLabel" destination="QEO-vS-xvR" id="aDe-nq-5LQ"/>
+                        <outlet property="vodLabel" destination="dSX-xW-NLU" id="YUg-JB-1C7"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="348" y="253"/>
+        </scene>
+    </scenes>
+</document>
